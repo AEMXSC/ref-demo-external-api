@@ -1,0 +1,7 @@
+# Force JSON content-type for extensionless files
+<FilesMatch "^doctors$">
+  ForceType application/json
+  Header set Content-Type "application/json; charset=utf-8"
+  Header set Access-Control-Allow-Origin "*"
+</FilesMatch>
+
