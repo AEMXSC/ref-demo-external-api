@@ -5,7 +5,7 @@ Simple JSON API for healthcare doctors directory.
 ## 🌐 API Endpoint
 
 ```
-https://vpistulkar.github.io/doctors-api/doctors.json
+https://aemxsc.github.io/ref-demo-external-api/api/v1/doctors
 ```
 
 ## 📋 Response Format
@@ -34,7 +34,7 @@ https://vpistulkar.github.io/doctors-api/doctors.json
 
 ### JavaScript (Fetch API)
 ```javascript
-fetch('https://vpistulkar.github.io/doctors-api/doctors.json')
+fetch('https://aemxsc.github.io/ref-demo-external-api/doctors.json')
   .then(response => response.json())
   .then(doctors => {
     console.log(doctors);
@@ -46,7 +46,7 @@ fetch('https://vpistulkar.github.io/doctors-api/doctors.json')
 ### JavaScript (Async/Await)
 ```javascript
 async function getDoctors() {
-  const response = await fetch('https://vpistulkar.github.io/doctors-api/doctors.json');
+  const response = await fetch('https://aemxsc.github.io/ref-demo-external-api/doctors.json');
   const doctors = await response.json();
   return doctors;
 }
@@ -54,14 +54,14 @@ async function getDoctors() {
 
 ### jQuery
 ```javascript
-$.getJSON('https://vpistulkar.github.io/doctors-api/doctors.json', function(doctors) {
+$.getJSON('https://aemxsc.github.io/ref-demo-external-api/doctors.json', function(doctors) {
   console.log(doctors);
 });
 ```
 
 ### cURL
 ```bash
-curl https://vpistulkar.github.io/doctors-api/doctors.json
+curl https://aemxsc.github.io/ref-demo-external-api/doctors.json
 ```
 
 ## 📊 Available Data
@@ -123,12 +123,4 @@ To update doctor information:
 
 MIT License - Feel free to use this API in your projects!
 
-## 🔗 Related Links
-
-- [Main Healthcare Site](https://github.com/vpistulkar/we-healthcare)
-- [Report Issues](https://github.com/vpistulkar/doctors-api/issues)
-
----
-
-**Last Updated:** 2025-10-09
 
