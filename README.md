@@ -5,7 +5,7 @@ Simple JSON API for healthcare doctors directory.
 ## 🌐 API Endpoint
 
 ```
-https://aemxsc.github.io/ref-demo-external-api/api/v1/doctors
+https://aemxsc.github.io/ref-demo-external-api/doctors
 ```
 
 ## 📋 Response Format
@@ -34,7 +34,7 @@ https://aemxsc.github.io/ref-demo-external-api/api/v1/doctors
 
 ### JavaScript (Fetch API)
 ```javascript
-fetch('https://aemxsc.github.io/ref-demo-external-api/doctors.json')
+fetch('https://aemxsc.github.io/ref-demo-external-api/doctors')
   .then(response => response.json())
   .then(doctors => {
     console.log(doctors);
@@ -46,7 +46,7 @@ fetch('https://aemxsc.github.io/ref-demo-external-api/doctors.json')
 ### JavaScript (Async/Await)
 ```javascript
 async function getDoctors() {
-  const response = await fetch('https://aemxsc.github.io/ref-demo-external-api/doctors.json');
+  const response = await fetch('https://aemxsc.github.io/ref-demo-external-api/doctors');
   const doctors = await response.json();
   return doctors;
 }
@@ -54,14 +54,14 @@ async function getDoctors() {
 
 ### jQuery
 ```javascript
-$.getJSON('https://aemxsc.github.io/ref-demo-external-api/doctors.json', function(doctors) {
+$.getJSON('https://aemxsc.github.io/ref-demo-external-api/doctors', function(doctors) {
   console.log(doctors);
 });
 ```
 
 ### cURL
 ```bash
-curl https://aemxsc.github.io/ref-demo-external-api/doctors.json
+curl https://aemxsc.github.io/ref-demo-external-api/doctors
 ```
 
 ## 📊 Available Data
@@ -96,7 +96,7 @@ curl https://aemxsc.github.io/ref-demo-external-api/doctors.json
 
 To update doctor information:
 
-1. Edit `doctors.json` file
+1. Edit `doctors` file
 2. Commit changes
 3. Push to GitHub
 4. API updates automatically within ~30 seconds
